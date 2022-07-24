@@ -51,4 +51,11 @@ print(multilinea);
   print(nombre == nombre2);
   //Como imprimir dos variables de tipo string
   print('$primerApellido $segundoApellido');
+
+  // ===== booleans
+  bool isActive = true;
+  bool isNotActive = !isActive;
+
+  print(isActive);
+  print(isNotActive);
 }

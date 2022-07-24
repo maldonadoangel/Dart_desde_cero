@@ -15,13 +15,13 @@ main(){
   int _a = 30;
   double $b = 40;
 
-  print(a);
-  print(decimal);
+ // print(a);
+ // print(decimal);
   //Podemos mostrar c, esta variable tendra el valor de null, debido a que no lo iniciamos
-  print(c);
+ // print(c);
 
   //la suma del entero y double es igual a un double
-  print(_a + $b);
+ // print(_a + $b);
 
 
   //== String
@@ -42,20 +42,31 @@ main(){
 ''';
 
 //Ejecutamos el multilinea
-print(multilinea);
+// print(multilinea);
 
-  print(nombre3);
+ // print(nombre3);
 
-  print(nombre);
-  print(nombre2);
-  print(nombre == nombre2);
+ // print(nombre);
+ // print(nombre2);
+ // print(nombre == nombre2);
   //Como imprimir dos variables de tipo string
-  print('$primerApellido $segundoApellido');
+ // print('$primerApellido $segundoApellido');
 
   // ===== booleans
   bool isActive = true;
   bool isNotActive = !isActive;
 
-  print(isActive);
-  print(isNotActive);
+ // print(isActive);
+ // print(isNotActive);
+
+  //=== List, tambien conocido como arreglos o colecciones
+  List<String> villanos = ['Lex', 'Red skull', 'Doom'];
+
+  //Reemplazamos el valor de la posicion de nuestra lista
+  villanos[0] = 'Superman';
+
+  print(villanos);
+
+
+
 }

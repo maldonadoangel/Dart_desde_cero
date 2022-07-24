@@ -23,4 +23,32 @@ main(){
   //la suma del entero y double es igual a un double
   print(_a + $b);
 
+
+  //== String
+
+  String? nombre = 'Soy un String o tambien llamado cadena de texto';
+  String? nombre2 = "Soy un String o tambien llamado cadena de texto";
+  //Como colocar comillas dentro de un string
+  String? nombre3 = "O'Connor";
+  String? primerApellido = 'Morales';
+  String? segundoApellido = 'Maldonado';
+
+//Como usar un string multilinea
+  String? multilinea = '''
+  Hola Mundo 
+  Como estas?
+  $nombre
+  O'Connor
+''';
+
+//Ejecutamos el multilinea
+print(multilinea);
+
+  print(nombre3);
+
+  print(nombre);
+  print(nombre2);
+  print(nombre == nombre2);
+  //Como imprimir dos variables de tipo string
+  print('$primerApellido $segundoApellido');
 }

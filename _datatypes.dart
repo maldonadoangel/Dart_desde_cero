@@ -60,13 +60,37 @@ main(){
  // print(isNotActive);
 
   //=== List, tambien conocido como arreglos o colecciones
+  
+
   List<String> villanos = ['Lex', 'Red skull', 'Doom'];
 
   //Reemplazamos el valor de la posicion de nuestra lista
   villanos[0] = 'Superman';
-
+  villanos.add('Duende verde');
+  villanos.add('Duende verde');
+  villanos.add('Duende verde');
+  villanos.add('Duende verde');
   print(villanos);
 
+  //Como remover los valores repetidos de la lista
+  //Convertimos la lista en un set y luego lo pasamos a lista para que nos muestre los valores unicos
+  var villanosSet = villanos.toSet();
+  print(villanosSet);
+  //convertimos el set de nuevo en una lista
+  print(villanosSet.toList());
 
+
+  
+
+// ====== Sets
+//Los sets no permiten agregar valores repetidos, pueden ser iterables igual que un listado
+//la unica diferencia es que los sets no tienen duplicados
+  Set<String> villanos2 = { 'Lex', 'Red skull', 'Doom'};
+  villanos2.add('Duende verde');
+  villanos2.add('Duende verde');
+  villanos2.add('Duende verde');
+  villanos2.add('Duende verde');
+
+  print(villanos2);
 
 }
